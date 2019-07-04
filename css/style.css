@@ -1,0 +1,300 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 1200px Grid with 12 Columns and 20px margins */
+/* Each column is 80px wide with 20px margins */
+
+.container {
+  width: 1200px;
+  margin: auto; /* Center the grid */
+}
+
+.empty { 
+  clear: both; /* Create a new row */
+}
+
+.col-1 {
+  width: 80px;
+}
+
+.col-2 {
+  width: 180px;
+}
+
+.col-3 {
+  width: 280px;
+}
+
+.col-4 {
+  width: 380px;
+}
+
+.col-5 {
+  width: 480px;
+}
+
+.col-6 {
+  width: 580px;
+}
+
+.col-7 {
+  width: 680px;
+}
+
+.col-8 {
+  width: 780px;
+}
+
+.col-9 {
+  width: 880px;
+}
+
+.col-10 {
+  width: 980px;
+}
+
+.col-11 {
+  width: 1080px;
+}
+
+.col-12 {
+  width: 1180px;
+}
+
+[class*="col-"] {
+  float: left;
+  margin: 0 2px;
+}
+
+/* Default font types for text based elements */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial";
+}
+
+p, ul, ol, li {
+  font-family: "Verdana", "Georgia";
+}
+
+/* End of framework */
+
+/* Lucida Font Inclusion */
+
+@font-face {
+  font-family: "Lucida";
+  src: url("fonts/LucidaSansRegular.ttf") format("truetype");
+}
+
+/* Universal Styling */
+
+body {
+  font-family: "Lucida", "Helvetica", "sans-serif";
+  font-variant: small-caps;
+  background-color: #96A8C8;
+}
+
+/* Grid Styling */
+
+.first-row {
+  margin-top: 10px;
+}
+
+/* Nav Area */
+
+.nav-area {
+  width: 166px;
+  height: 248px;
+  padding: 17px;
+  border: 1.5px black solid;
+  border-radius: 10px;
+  text-align: left;
+  background-color: white;
+}
+
+.nav-area nav {
+  padding-left: 20%;
+}
+
+.nav-area a {
+  color: #282B30;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.nav-area a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* Header Area */
+
+.header-area {
+  width: 560px;
+  padding: 15px 0 15px 15px;
+  border: 1.5px black solid;
+  border-radius: 10px;
+  text-align: left;
+  background-color: white;
+}
+
+.logo a, .logo .slogan {
+  display: inline-block;
+}
+
+.logo .slogan {
+  width: 50%;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+/* Comic Area */
+
+.comic-area {
+  margin: 5px auto;
+  padding: 10px 0;
+  padding-right: 5px;
+  border: 1.5px black solid;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.comic-area h1 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.controls {
+  margin: 1em auto;
+}
+
+.controls li {
+  display: inline-block;
+}
+
+.controls li a {
+  padding: 1.5px 12px;
+  margin: 0 4px;
+  border: 1.5px solid #333;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: #6E7B91;
+}
+
+.controls li a:hover {
+  color: #6E7B91;
+  background-color: white;
+}
+
+.comic-extra {
+  margin-top: 35px;
+  font-size: 15px;
+}
+
+/* Extra Info */
+
+.extra-area {
+  margin: 5px auto;
+  padding: 25px 0;
+  padding-right: 5px;
+  border: 1.5px black solid;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.extra-area div {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.comics {
+  margin-bottom: 1px;
+}
+
+.extras-link { /* Style all links in the extras area */
+  color: #96A8C8;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.extras-link:hover {
+  text-decoration: underline;
+}
+
+.other-comics {
+  width: 300px;
+  margin: auto;
+}
+
+.important-note {
+  width: 45%;
+  font-size: 6px;
+  font-style: italic;
+}
+
+.licensing {
+  width: 430px;
+}
+
+.licensing p {
+  margin-bottom: 20px;
+}
